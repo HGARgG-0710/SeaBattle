@@ -182,11 +182,12 @@ public class SeaBattle {
             " ",
             "Gameplay looks a bit like this: I ask you the coordinate in format LETTERnumber and you input it(A1, for example). ",
             "If your input is correct, then it means that you hit the enemy's ship. If it's not, then you missed. ",
-            "After some correct inputs you destroy it. To win a game you need to destroy all of ships.", " ",
-            "But firstly you need to input some other stuff: ", "1. Count of columns of play field (it's max x coordinate + 1);", 
-            "2. Rows of play field (it's max y-coordinate + 1);",
-            "3. Count of ships you fight against;", "4. Count of parts each ship must have (they have the same size).", " ",
-            "Insert each number from a new line." };
+            "After some correct inputs you destroy it. To win a game you need to destroy all of ships.\n", 
+            "But firstly you need to input some other stuff: ",
+            "1. Number of play field  columns (it's max x coordinate + 1);",
+            "2. Number of play field rows (it's max y-coordinate + 1);", "3. Number of ships you fight against;",
+            "4. Number of parts each ship must have (they have the same size).", " ",
+            "Insert each number from a new line: \n" };
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -199,6 +200,8 @@ public class SeaBattle {
 
         for (byte n = 0; n < input.length; n++)
             input[n] = in.nextByte();
+
+        System.out.println();
 
         mainField.setLen(input[0], input[1]);
         mainField.createCoordinateSystem(mainField);
@@ -283,8 +286,7 @@ public class SeaBattle {
                 areAnyElementsLeft = false;
         } while (areAnyElementsLeft);
 
-        System.out.println("Congratulations!) You won the \"Sea Battle\" game!");
-
+        System.out.println("\nCongratulations! :) You won the \"Sea Battle\" game!");
         in.close();
     }
 
