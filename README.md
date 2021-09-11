@@ -18,4 +18,4 @@ After it, the game starts.
 It is not very difficult, considering the whole game consists of just one file. 
 It is done like so: 
 
-    $ cd src/cmdver/singleplayer/ && javac -d ../../../out/production/SeaBattle/ SeaBattle.java
+    $ cd src/cmdver/singleplayer/ && javac -d ../../../out/production/SeaBattle/SeaBattle.java
