@@ -19,3 +19,10 @@ It is not very difficult, considering the whole game consists of just one file.
 It is done like so: 
 
     $ cd src/cmdver/singleplayer/ && javac -d ../../../out/production/SeaBattle/SeaBattle.java
+
+## The 'bin' directory. 
+
+If you get tired of typing the same thing while running or compiling the game, then afraid be not for recently I've written small scripts for automazing the processes of running and compiling it. 
+
+You may find them in the bin folder. 
+For now only Windows (Batchfiles) is supported, but soon Linux is to arrive as well. 
